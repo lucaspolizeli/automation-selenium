@@ -1,0 +1,22 @@
+package br.com.atomicsolutions.voegol;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class VoeGol {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.voegol.com.br/pt");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.xpath("//div[@id = 'purchase-box']//a[@class = 'chosen-single chosen-default']/span[@class = 'chosen-placeholder-origin']")).click();
+		driver.findElement(By.xpath("//div[@id = 'purchase-box']//a[@class = 'chosen-single chosen-default']/span[@class = 'chosen-placeholder-origin']")).sendKeys("CONGO");	
+	}
+
+}

@@ -1,0 +1,37 @@
+package br.com.atomicsolutions.voegol;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class VoeGol {
+
+	public static void main(String[] args) {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.voegol.com.br/pt");
+		driver.manage().window().maximize();
+		
+		driver.findElement(By.name("ControlGroupSearchView$AvailabilitySearchInputSearchView$TextBoxMarketOrigin1")).click();
+		driver.findElement(By.name("ControlGroupSearchView$AvailabilitySearchInputSearchView$TextBoxMarketOrigin1")).sendKeys("CONGO");
+		driver.findElement(By.xpath("//div[@data-airportname = 'São Paulo - Congonhas (CGH)']")).click();
+		
+		driver.findElement(By.name("ControlGroupSearchView$AvailabilitySearchInputSearchView$TextBoxMarketDestination1")).click();
+		driver.findElement(By.name("ControlGroupSearchView$AvailabilitySearchInputSearchView$TextBoxMarketDestination1")).sendKeys("Aracaju");
+		
+		driver.findElement(By.name("ControlGroupSearchView$AvailabilitySearchInputSearchView$TextBoxMarketDestination1")).sendKeys(Keys.TAB);
+		driver.findElement(By.name("ControlGroupSearchView$ButtonSubmit")).click();
+		
+		driver.findElement(By.id("buttonPopup")).click();
+		
+		driver.findElement(By.id("ControlGroupSelect2View_AvailabilityInputSelect2View_LinkButtonGoingDays6")).click();
+		
+		
+		//driver.quit();
+		
+	}
+
+}

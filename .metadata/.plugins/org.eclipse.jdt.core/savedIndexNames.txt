@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\Atomic Solutions\Desktop\Treinamento\.metadata\.plugins\org.eclipse.jdt.core
+486608842.index
+2347965625.index
+1742770596.index

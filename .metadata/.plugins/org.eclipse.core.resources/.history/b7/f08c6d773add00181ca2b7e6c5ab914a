@@ -1,0 +1,15 @@
+package br.com.atomicsolutions.cometa;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Cometa {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+
+	}
+
+}

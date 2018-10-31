@@ -1,0 +1,60 @@
+package br.com.atomicsolutions.teste;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NewTour {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://newtours.demoaut.com/");
+		
+		driver.findElement(By.name("userName")).sendKeys("teste");
+		driver.findElement(By.name("password")).sendKeys("teste");
+		driver.findElement(By.name("login")).click();
+		
+		driver.findElement(By.name("passCount")).click();
+		driver.findElement(By.xpath("//select[@name = 'passCount']/option[@value = '2']")).click();
+		driver.findElement(By.name("passCount")).click();
+		
+		driver.findElement(By.name("fromPort")).click();
+		driver.findElement(By.xpath("//select[@name = 'fromPort']/option[@value = 'Portland']")).click();
+		driver.findElement(By.name("fromPort")).click();
+		
+		driver.findElement(By.name("fromMonth")).click();
+		driver.findElement(By.xpath("//select[@name = 'fromMonth']/option[@value = '7']")).click();
+		driver.findElement(By.name("fromMonth")).click();
+		
+		driver.findElement(By.name("fromDay")).click();
+		driver.findElement(By.xpath("//select[@name = 'fromDay']/option[@value = '9']")).click();
+		driver.findElement(By.name("fromDay")).click();
+		
+		driver.findElement(By.name("toPort")).click();
+		driver.findElement(By.xpath("//select[@name = 'toPort']/option[@value = 'Paris']")).click();
+		driver.findElement(By.name("toPort")).click();
+		
+		driver.findElement(By.name("toMonth")).click();
+		driver.findElement(By.xpath("//select[@name = 'toMonth']/option[@value = '12']")).click();
+		driver.findElement(By.name("toMonth")).click();
+		
+		driver.findElement(By.name("toDay")).click();
+		driver.findElement(By.xpath("//select[@name = 'toDay']/option[@value = '1']")).click();
+		driver.findElement(By.name("toDay")).click();
+		
+		List<WebElement> sc = driver.findElements(By.name("servClass"));
+		
+		for(WebElement x : sc) {
+			System.out.println(x.getAttribute("text"));
+		}
+		
+		
+	}
+
+}

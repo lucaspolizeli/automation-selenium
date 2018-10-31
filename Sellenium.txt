@@ -1,0 +1,12 @@
+Teste de regressão é feito em qualidade e prod e ele consiste em testar se o que tava feito e continua funcionando 
+selenium appium
+
+Criar projeto eclipseadicionar selenium external path .jar
+
+depois baixar o driver d google chrome que vai executar no brownser
+definir no script 
+xpath = //select[@name = 'passCount']/option[@value = '2']
+a propriedade é pelo @
+
+
+//option[contains(@value, 'automação') or @name 

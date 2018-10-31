@@ -1,0 +1,28 @@
+package br.com.atomicsolutions.teste;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class NewTour {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("http://newtours.demoaut.com/");
+		
+		driver.findElement(By.name("userName")).sendKeys("teste");
+		driver.findElement(By.name("password")).sendKeys("teste");
+		driver.findElement(By.name("login")).click();
+		
+		driver.findElement(By.name("passCount")).click();
+		driver.findElement(By.xpath("//select[@name = 'passCount']/option[@value = '2']")).click();
+		
+		
+		
+
+	}
+
+}

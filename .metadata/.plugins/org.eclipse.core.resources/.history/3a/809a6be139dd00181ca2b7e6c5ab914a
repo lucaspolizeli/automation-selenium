@@ -1,0 +1,10 @@
+package br.com.atomicsolutions.cometa;
+
+public class Cometa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
