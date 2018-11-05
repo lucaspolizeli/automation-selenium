@@ -1,0 +1,53 @@
+package br.com.atomicsolutions.cometa;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+
+public class Cometa {
+
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		String localIda = "SANTO ANDRÉ";
+		String localPara = "Guarujá";
+		
+		String diaIda = "";
+		String mesIda = "";
+		String anoIda = "";
+		
+		driver.manage().window().maximize();
+		driver.get("http://www.viacaocometa.com.br");
+		
+		String atual = driver.getWindowHandle();
+		
+		Thread.sleep(1000);
+		driver.findElement(By.id("origin-sidebar")).sendKeys(localIda);
+		Thread.sleep(1000);
+		driver.findElement(By.id("origin-sidebar")).sendKeys(Keys.ENTER);
+		
+		driver.findElement(By.id("destination-sidebar")).sendKeys(localPara);
+		Thread.sleep(1000);
+		driver.findElement(By.id("destination-sidebar")).sendKeys(Keys.ENTER);
+		
+		driver.findElement(By.xpath("//td[@data-month = '10' and @data-year='2018']/a[text() = '8']")).click();
+		//driver.findElement(By.xpath("//button[@class='confirm']")).click();
+    	driver.findElement(By.xpath("//div[@class='x-main-content__sidebar--form-field x-main-content__sidebar--form-submit']/button")).click();
+    	Thread.sleep(2000);
+    	
+    	if(driver.getTitle() != "JCA - Venda de Passagens Online") {
+    		driver.close();
+    	}
+    	
+    	System.out.println(driver.getTitle());
+    	
+//
+//    	Thread.sleep(2000);
+//    	driver.findElement(By.xpath("//span//b[text() = '06:55']/../../span/input")).click();
+    	
+	}
+
+}

@@ -16,14 +16,14 @@ public class VoeGol {
 		
 		String ida = "congo";
 		String volta = "sdu";
-		String HoraIda = "13:10";
+		String HoraIda = "06:40";
 		String HoraVolta = "07:10";
 		
-		String diaIda = "9";
+		String diaIda = "15";
 		String mesIda = "10";
 		String anoIda = "2018";
 		
-		String diaVolta = "12";
+		String diaVolta = "22";
 		String mesVolta = "10";
 		String anoVolta = "2018";
 		
