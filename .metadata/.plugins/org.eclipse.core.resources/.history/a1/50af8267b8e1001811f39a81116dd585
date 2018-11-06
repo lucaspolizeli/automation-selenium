@@ -15,11 +15,11 @@ public class Cometa {
 		String localIda = "Santo André";
 		String localPara = "Guarujá";
 		
-		String diaIda = "8";
-		String mesIda = "10";
-		String anoIda = "2018";
+		String diaIda = "";
+		String mesIda = "";
+		String anoIda = "";
 		
-		String horaIda = "06:55";
+		String horaIda = "";
 		
 		driver.manage().window().maximize();
 		driver.get("http://www.viacaocometa.com.br");
@@ -48,21 +48,14 @@ public class Cometa {
     	
     	driver.findElement(By.id("consultaSubmit")).click();
     	
-    	Thread.sleep(2000);
     	driver.findElement(By.xpath("(//td[@class='desenho-poltrona libre'])[1]")).click();
-    	Thread.sleep(2000);
-    	
+    	Thread.sleep(1000);
     	driver.findElement(By.id("passageiroNome")).sendKeys("Lucas Polizeli");
     	driver.findElement(By.id("passageiroDocumento")).sendKeys("289877702");
     	driver.findElement(By.xpath("//input[@value='CONTINUAR']")).click();
     	Thread.sleep(1000);
-    	
       	driver.findElement(By.xpath("//a[contains(span, 'Finalizar')]")).click();
     	
-      	Thread.sleep(2000);
-      	driver.findElement(By.id("login")).sendKeys("41188270850");
-      	driver.findElement(By.id("senha")).sendKeys("Llucas89");
-      	driver.findElement(By.xpath(" //form[@id='loginForm']//input[@class='btn-login']")).click();
 	}
 
 }

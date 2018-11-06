@@ -59,7 +59,6 @@ public class Cometa {
     	
       	driver.findElement(By.xpath("//a[contains(span, 'Finalizar')]")).click();
     	
-      	Thread.sleep(2000);
       	driver.findElement(By.id("login")).sendKeys("41188270850");
       	driver.findElement(By.id("senha")).sendKeys("Llucas89");
       	driver.findElement(By.xpath(" //form[@id='loginForm']//input[@class='btn-login']")).click();

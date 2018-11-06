@@ -3,7 +3,7 @@
   <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;workbench>&#xD;&#xA;&lt;mruList>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.jdt.ui.ClassFileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.ClassFileEditor&quot; name=&quot;RemoteWebDriver.class&quot; tooltip=&quot;org.openqa.selenium.remote.RemoteWebDriver&quot;>&#xD;&#xA;&lt;persistable org.eclipse.jdt.ui.ClassFileIdentifier=&quot;=Cometa/C:\/DriverChrome\/selenium-server-standalone-3.14.0.jar&amp;lt;org.openqa.selenium.remote(RemoteWebDriver.class&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cometa.java&quot; tooltip=&quot;Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;NewTour.java&quot; tooltip=&quot;NewTour/src/br/com/atomicsolutions/teste/NewTour.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/NewTour/src/br/com/atomicsolutions/teste/NewTour.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;file factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VoeGol.java&quot; tooltip=&quot;VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;>&#xD;&#xA;&lt;persistable path=&quot;/VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;/>&#xD;&#xA;&lt;/file>&#xD;&#xA;&lt;/mruList>&#xD;&#xA;&lt;/workbench>"/>
   <tags>activeSchemeId:org.eclipse.ui.defaultAcceleratorConfiguration</tags>
   <tags>ModelMigrationProcessor.001</tags>
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_gUA7Qtt_Eeiic9ZDmqW42g" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_hLpt49t_Eeiic9ZDmqW42g" label="%trimmedwindow.label.eclipseSDK" x="602" y="166" width="1050" height="607">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_gUA7Qtt_Eeiic9ZDmqW42g" elementId="IDEWindow" contributorURI="platform:/plugin/org.eclipse.platform" selectedElement="_hLpt49t_Eeiic9ZDmqW42g" label="%trimmedwindow.label.eclipseSDK" x="0" y="0" width="1050" height="607">
     <persistedState key="coolBarVisible" value="true"/>
     <persistedState key="perspectiveBarVisible" value="true"/>
     <persistedState key="isRestored" value="true"/>
@@ -355,13 +355,13 @@
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_fVp9INuhEeiic9ZDmqW42g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="VoeGol.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VoeGol.java&quot; partName=&quot;VoeGol.java&quot; title=&quot;VoeGol.java&quot; tooltip=&quot;VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;558&quot; selectionTopPixel=&quot;856&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;VoeGol.java&quot; partName=&quot;VoeGol.java&quot; title=&quot;VoeGol.java&quot; tooltip=&quot;VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/VoeGol/src/br/com/atomicsolutions/voegol/VoeGol.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;558&quot; selectionTopPixel=&quot;466&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
         </children>
         <children xsi:type="basic:Part" xmi:id="_itV3QN05Eeiamqacw9QC3g" elementId="org.eclipse.e4.ui.compatibility.editor" contributionURI="bundleclass://org.eclipse.ui.workbench/org.eclipse.ui.internal.e4.compatibility.CompatibilityEditor" label="Cometa.java" iconURI="platform:/plugin/org.eclipse.jdt.ui/icons/full/obj16/jcu_obj.png" closeable="true">
-          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cometa.java&quot; partName=&quot;Cometa.java&quot; title=&quot;Cometa.java&quot; tooltip=&quot;Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;1615&quot; selectionTopPixel=&quot;361&quot;/>&#xD;&#xA;&lt;/editor>"/>
+          <persistedState key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;editor id=&quot;org.eclipse.jdt.ui.CompilationUnitEditor&quot; name=&quot;Cometa.java&quot; partName=&quot;Cometa.java&quot; title=&quot;Cometa.java&quot; tooltip=&quot;Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;>&#xD;&#xA;&lt;input factoryID=&quot;org.eclipse.ui.part.FileEditorInputFactory&quot; path=&quot;/Cometa/src/br/com/atomicsolutions/cometa/Cometa.java&quot;/>&#xD;&#xA;&lt;editorState selectionHorizontalPixel=&quot;0&quot; selectionLength=&quot;0&quot; selectionOffset=&quot;2231&quot; selectionTopPixel=&quot;511&quot;/>&#xD;&#xA;&lt;/editor>"/>
           <tags>Editor</tags>
           <tags>org.eclipse.jdt.ui.CompilationUnitEditor</tags>
           <tags>removeOnHide</tags>
@@ -587,7 +587,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hU5Jctt_Eeiic9ZDmqW42g" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_XxR_kODtEeiwwY6dSsL2uw" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gXcD1dt_Eeiic9ZDmqW42g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8KgbUOGxEeiDX89Vo3hecg" elementId="print" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" command="_gXcD1dt_Eeiic9ZDmqW42g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hU5Jc9t_Eeiic9ZDmqW42g" elementId="group.edit" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -618,7 +618,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hU5Jett_Eeiic9ZDmqW42g" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_Xxs2UODtEeiwwY6dSsL2uw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gXcDR9t_Eeiic9ZDmqW42g"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_8KlT0OGxEeiDX89Vo3hecg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_gXcDR9t_Eeiic9ZDmqW42g"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_hU5Je9t_Eeiic9ZDmqW42g" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -2585,7 +2585,7 @@
   <addons xmi:id="_gUA7U9t_Eeiic9ZDmqW42g" elementId="MinMax Addon" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.minmax.MinMaxAddon"/>
   <addons xmi:id="_gUA7VNt_Eeiic9ZDmqW42g" elementId="org.eclipse.ui.workbench.addon.0" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
   <addons xmi:id="_gUT2MNt_Eeiic9ZDmqW42g" elementId="SplitterAddon" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.addons.swt/org.eclipse.e4.ui.workbench.addons.splitteraddon.SplitterAddon"/>
-  <addons xmi:id="_WZj-seDtEeiwwY6dSsL2uw" elementId="org.eclipse.ui.ide.addon.0" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
+  <addons xmi:id="_IYS0IKimEeS11vbz3f9ezw" elementId="org.eclipse.ui.ide.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide" contributionURI="bundleclass://org.eclipse.ui.ide/org.eclipse.ui.internal.ide.addons.SaveAllDirtyPartsAddon"/>
   <addons xmi:id="_dz0JgGOlEeSMMaPQU2nlzw" elementId="org.eclipse.ui.ide.application.addon.0" contributorURI="platform:/plugin/org.eclipse.ui.ide.application" contributionURI="bundleclass://org.eclipse.ui.ide.application/org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon"/>
   <categories xmi:id="_gXS4wNt_Eeiic9ZDmqW42g" elementId="org.eclipse.team.ui.category.team" name="Team" description="Actions that apply when working with a Team"/>
   <categories xmi:id="_gXS4wdt_Eeiic9ZDmqW42g" elementId="org.eclipse.ui.category.views" name="Views" description="Commands for opening views"/>

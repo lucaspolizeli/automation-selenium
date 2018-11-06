@@ -12,21 +12,18 @@ public class Cometa {
 		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		
-		String localIda = "Santo André";
+		String localIda = "SANTO ANDRÉ";
 		String localPara = "Guarujá";
 		
-		String diaIda = "8";
-		String mesIda = "10";
-		String anoIda = "2018";
-		
-		String horaIda = "06:55";
+		String diaIda = "";
+		String mesIda = "";
+		String anoIda = "";
 		
 		driver.manage().window().maximize();
 		driver.get("http://www.viacaocometa.com.br");
 		
 		Thread.sleep(1000);
 		driver.findElement(By.id("origin-sidebar")).sendKeys(localIda);
-		
 		Thread.sleep(1000);
 		driver.findElement(By.id("origin-sidebar")).sendKeys(Keys.ENTER);
 		
@@ -34,7 +31,7 @@ public class Cometa {
 		Thread.sleep(1000);
 		driver.findElement(By.id("destination-sidebar")).sendKeys(Keys.ENTER);
 		
-		driver.findElement(By.xpath("//td[@data-month = '"+ mesIda +"' and @data-year='"+ anoIda +"']/a[text() = '"+ diaIda +"']")).click();
+		driver.findElement(By.xpath("//td[@data-month = '10' and @data-year='2018']/a[text() = '8']")).click();
 
     	driver.findElement(By.xpath("//div[@class='x-main-content__sidebar--form-field x-main-content__sidebar--form-submit']/button")).click();
     	Thread.sleep(2000);
@@ -44,25 +41,16 @@ public class Cometa {
     	}
     	Thread.sleep(5000);
     	
-    	driver.findElement(By.xpath("//span//b[text() = '"+ horaIda +"']/../../span/input")).click();
+    	driver.findElement(By.xpath("//span//b[text() = '06:55']/../../span/input")).click();
     	
     	driver.findElement(By.id("consultaSubmit")).click();
     	
-    	Thread.sleep(2000);
     	driver.findElement(By.xpath("(//td[@class='desenho-poltrona libre'])[1]")).click();
-    	Thread.sleep(2000);
-    	
     	driver.findElement(By.id("passageiroNome")).sendKeys("Lucas Polizeli");
     	driver.findElement(By.id("passageiroDocumento")).sendKeys("289877702");
     	driver.findElement(By.xpath("//input[@value='CONTINUAR']")).click();
-    	Thread.sleep(1000);
-    	
       	driver.findElement(By.xpath("//a[contains(span, 'Finalizar')]")).click();
     	
-      	Thread.sleep(2000);
-      	driver.findElement(By.id("login")).sendKeys("41188270850");
-      	driver.findElement(By.id("senha")).sendKeys("Llucas89");
-      	driver.findElement(By.xpath(" //form[@id='loginForm']//input[@class='btn-login']")).click();
 	}
 
 }
