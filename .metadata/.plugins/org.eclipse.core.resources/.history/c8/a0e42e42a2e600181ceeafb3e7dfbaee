@@ -1,0 +1,38 @@
+package br.com.atomicsolutions.scenario;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import br.com.atomicsolutions.component.Abrir_Portal_GOL;
+import br.com.atomicsolutions.component.GOL_Busca_Passagem;
+import br.com.atomicsolutions.component.Login_GOL;
+import br.com.atomicsolutions.component.Parametros_Selecao_Busca;
+import br.com.atomicsolutions.component.Selecionar_Lugar_GOL;
+import br.com.atomicsolutions.proton.Proton;
+
+public class GOL_Polizeli {
+	public static void main(String[] args) throws InterruptedException{
+		System.setProperty("Id_Dataset_Run", args[0]);
+		
+		Proton.updateRunStatus("Running");
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\DriverChrome\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		try {
+			Abrir_Portal_GOL.Run(driver);
+			Parametros_Selecao_Busca.Run(driver);
+			GOL_Busca_Passagem.Run(driver);
+			Login_GOL.Run(driver);
+			Selecionar_Lugar_GOL.Run(driver);
+			
+			Proton.updateRunStatus("Passed");
+		}catch(Exception e) {
+			Proton.updateRunStatus("Failed");
+			driver.quit();
+		}
+		
+		driver.quit();
+		
+	}
+}

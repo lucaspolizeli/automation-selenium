@@ -1,0 +1,16 @@
+package br.com.atomicsolutions.component;
+
+import org.openqa.selenium.WebDriver;
+
+import br.com.atomicsolutions.proton.Proton;
+
+public class Login_GOL {
+	public static void Run(WebDriver driver) throws Exception {
+		// TODO Auto-generated method stub
+		Proton.startComponent();
+		
+		
+		
+		Proton.endComponent();
+	}
+}
