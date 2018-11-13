@@ -10,8 +10,8 @@ public class Login_GOL {
 		// TODO Auto-generated method stub
 		Proton.startComponent();
 		
-		String email = Proton.getProtonValue("in_Email_Gol");
-		String senha = Proton.getProtonValue("in_Senha_Gol");
+		String email = "lumpolizeli@gmail.com";
+		String senha = "Llucas89";
 		
 		driver.findElement(By.id("LoginMemberLogin2View_TextBoxUserID")).sendKeys(email);
 		driver.findElement(By.id("LoginMemberLogin2View_PasswordFieldPassword")).sendKeys(senha);

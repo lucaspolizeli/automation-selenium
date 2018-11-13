@@ -11,16 +11,16 @@ public class Parametros_Selecao_Busca {
 		// TODO Auto-generated method stub
 		Proton.startComponent();
 		
-		String ida = Proton.getProtonValue("in_Local_Ida");
-		String volta = Proton.getProtonValue("in_Local_Volta");
+		String ida = "congo";
+		String volta = "sdu";
 
-		String diaIda = Proton.getProtonValue("in_Dia_Ida");
-		String mesIda = Proton.getProtonValue("in_Mes_Ida");
-		String anoIda = Proton.getProtonValue("in_Ano_Ida");
+		String diaIda = "15";
+		String mesIda = "10";
+		String anoIda = "2018";
 		
-		String diaVolta = Proton.getProtonValue("in_Dia_Volta");
-		String mesVolta = Proton.getProtonValue("in_Mes_Volta");
-		String anoVolta = Proton.getProtonValue("in_Ano_Volta");
+		String diaVolta = "22";
+		String mesVolta = "10";
+		String anoVolta = "2018";
 		
 		driver.findElement(By.xpath("//div[@id = 'purchase-box']//a[@class = 'chosen-single chosen-default']/span[@class = 'chosen-placeholder-origin']")).click();
 		driver.findElement(By.id("header-chosen-origin")).sendKeys(ida);

@@ -12,9 +12,8 @@ import br.com.atomicsolutions.component.Selecionar_Lugar_GOL;
 import br.com.atomicsolutions.proton.Proton;
 
 public class GOL_Polizeli {
-	
 	public static void main(String[] args) throws InterruptedException{
-		System.setProperty("Id_Dataset_Run", args[0]);
+		//System.setProperty("Id_Dataset_Run", args[0]);
 		
 		Proton.updateRunStatus("Running");
 		

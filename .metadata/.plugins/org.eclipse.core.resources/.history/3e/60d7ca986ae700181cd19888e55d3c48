@@ -12,8 +12,7 @@ public class Finalizar_Compra {
 
 		driver.findElement(By.id("UnitMapViewControl2_LinkButtonAssignUnit")).click();
 		driver.findElement(By.id("ControlGroupProductsView2_LinkButtonSubmit")).click();
-		Proton.takeScreenShot(driver, "Compra OK");
-		
+
 		Proton.endComponent();
 	}
 }

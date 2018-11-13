@@ -10,18 +10,15 @@ public class GOL_Busca_Passagem {
 		// TODO Auto-generated method stub
 		Proton.startComponent();
 		
-		String HoraIda = Proton.getProtonValue("in_Hora_Ida");
-		String HoraVolta = Proton.getProtonValue("in_Hora_Volta");
+		String HoraIda = "06:40";
+		String HoraVolta = "07:10";
 		
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("(//*[@id='flightsFilter01']/../../..//div[@class = 'infoScale' and contains(span, '"+ HoraIda +"')]/../../../..//td[@class = 'taxa taxaExecutiva'])[(1)]")).click();
-		Proton.takeScreenShot(driver, "Seleciona 1 Ida");
 		
 		Thread.sleep(1000);
-		driver.findElement(By.xpath("(//*[@id='flightsFilter02']/../../..//div[@class = 'infoScale' and contains(span, '"+ HoraVolta +"')]/../../../..//td[@class = 'taxa taxaExecutiva'])[(1)]")).click();
-		Proton.takeScreenShot(driver, "Seleciona 2 Volta");
+		driver.findElement(By.xpath("(//*[@id='flightsFilter02']/../../..//div[@class = 'infoScale' and contains(span, '"+ HoraVolta +"')]/../../../..//td[@class = 'taxa taxaExecutiva'])[(2)]")).click();
 		
-		Thread.sleep(1000);
 		driver.findElement(By.xpath("//input[@value = 'Continuar']")).click();
 		
 		Proton.endComponent();
